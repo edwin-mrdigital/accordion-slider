@@ -22,11 +22,16 @@
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	transition: all 0.3s ease-in-out;
+	overflow: hidden;
+	transition: all 0.6s ease-in-out;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
 }
-.accordion-slider-item:hover {
-	width: 100%;
-}
+
 .accordion-slider-link {
 	position: absolute;
 	inset: 0;
@@ -36,12 +41,22 @@
 }
 
 .accordion-slider-content {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	/* text-align: center; */
+	/* position: absolute; */
+	/* top: 50%; */
+	/* left: 50%; */
+	/* transform: translate(-50%, -50%); */
+	/* transform: translate(-50%, -50%) rotate(270deg); */
+	/* transform-origin: center center; */
+	position: relative;
+	transform: rotate(-90deg);
+	text-align: center;
 	/* color: white; */
+	padding: 40px 40px;
+	width: 100%;
+	max-width: 560px;
+	transition: opacity 0.45s ease-in-out;
+
+	
 }
 .accordion-slider-content h2 {
 	font-size: 32px;
@@ -51,5 +66,29 @@
 }
 .accordion-slider-content p {
 	font-size: 18px;
-	margin-top: 16px;
+	/* margin-top: 16px; */
+	margin: 0;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+}
+
+
+.accordion-slider-item:hover {
+	width: 100%;
+}
+.accordion-slider-item:hover .accordion-slider-content {
+	/* transform: translate(-50%, -50%) rotate(0deg); */
+	transform: rotate(0deg);
+	padding-top: 20%;
+}
+.accordion-slider-item:hover .accordion-slider-content h2 {
+	/* transform: translate(-50%, -50%) rotate(0deg); */
+}
+.accordion-slider-item:hover .accordion-slider-content p {
+	visibility: visible;
+	opacity: 1;
+	height: auto;
 }
