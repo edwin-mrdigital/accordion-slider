@@ -1,0 +1,23 @@
+{
+	"name": "accordion-slider",
+	"version": "1.0.0",
+	"description": "Accordion Slider",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/edwin-mrdigital/accordion-slider.git"
+	},
+	"keywords": [
+		"accordfion",
+		"slider"
+	],
+	"author": "Edwin",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/edwin-mrdigital/accordion-slider/issues"
+	},
+	"homepage": "https://github.com/edwin-mrdigital/accordion-slider#readme"
+}
