@@ -1,0 +1,29 @@
+
+
+.section {
+   padding: 100px 0;
+}
+
+
+
+
+/* ======[ACCORDION SLIDER]===== */
+.accordion-slider-frame {
+   display: flex;
+   flex-direction: row;
+	flex-wrap: nowrap;
+   gap: 16px;
+}
+.accordion-slider-item {
+	position: relative;
+	width: 25%;
+	height: 500px;
+   background-color: wheat;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: all 0.3s ease-in-out;
+}
+.accordion-slider-item:hover {
+	width: 100%;
+}
